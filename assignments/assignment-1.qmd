@@ -12,4 +12,68 @@ My first assignment has two parts.
 
 ## (a)
 
+## Selected Video
+
+Video Title: Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler- Mustafa Baydoğan & Erdi Daşdemir
+
+### Summary
+
+Mustafa Hoca, Boğaziçi Üniversitesi Endüstri Mühendisliği öğretim üyesi ve veri bilimi ile optimizasyon odaklı projeler yapan bir girişimci olarak, öğrencilerine veri analizi, makine öğrenmesi ve optimizasyon konularında uygulamalı öğrenmenin önemini vurguladı; gerçek dünyadaki örneklerle, envanter yönetimi, perakende satış tahminleri, elektrik üretim ve tüketim dengesi gibi problemlerde veri toplama, ön işleme, öznitelik çıkarımı, tahmin ve karar verme süreçlerinin nasıl uygulandığını gösterdi; geleneksel öğrenme ve derin öğrenme yöntemlerinin avantajları, açıklanabilir yapay zekâ ve pekiştirmeli öğrenme yaklaşımları üzerinde durdu; öğrencilere tavsiyesi, teoriyi uygulama ile birleştirerek canlı problemlerle deneyim kazanmak, yüksek lisans/doktora planlarını veri bilimi ve optimizasyon odaklı düşünmek ve mentorluk veya proje ortamlarında elinizi “kirleterek” öğrenmek oldu.
+
+### Open-ended Question
+
+Question: Veri toplama, öznitelik çıkarımı, tahmin ve optimizasyon adımlarını nasıl birbirine bağlarsınız?
+
+Answer: Önce veriyi toplar ve temizlerim, sonra önemli öznitelikleri çıkarır, tahmin modelleri ile geleceği değerlendirir ve bu tahminleri optimizasyon modellerine entegre ederek en iyi kararı alırım.
+
+### Multiple Choice Question
+
+Question: Karar verirken modellerin nedenlerini açıklamak için hangi yöntem kullanılır?A) Derin Öğrenme B) Pekiştirmeli Öğrenme C) Veri Görselleştirme D) Açıklanabilir Yapay Zeka
+
+Answer: D
+
 ## (b)
+
+```{r}
+
+library(dslabs)
+data("polls_us_election_2016")
+
+my_first <- "Aysenaz"
+my_birth_year <- 2004
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+
+if (k %% 2 == 0) {
+  head(polls_us_election_2016, k)
+} else {
+  tail(polls_us_election_2016, k)
+}
+
+total_na <- sum(is.na(polls_us_election_2016))
+column_na <- sort(colSums(is.na(polls_us_election_2016)), decreasing = TRUE)
+print(total_na)
+print(head(column_na, 8))
+
+new_data <- polls_us_election_2016
+for (col in names(new_data)) {
+  if (is.numeric(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
+  } else if (is.character(new_data[[col]]) || is.factor(new_data[[col]])) {
+    new_data[[col]] <- as.character(new_data[[col]])
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+  }
+}
+
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+
+knitr::kable(tail(polls_us_election_2016, k))
+
+print(sum(is.na(new_data)))
+print(anyNA(new_data))
+
+
+```
