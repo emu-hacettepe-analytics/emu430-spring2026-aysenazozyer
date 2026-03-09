@@ -3,11 +3,13 @@ title: "About Me"
 sidebar: false 
 ---
 
+Junior Industrial Engineering student at Hacettepe University with a strong interest in data analysis and analytical thinking. Motivated to learn new methods, work with data, and improve problem-solving skills. I adapt quickly to new environments, communicate effectively, and continuously seek opportunities to develop myself while contributing to meaningful projects.
+
 # Education
 
 -   B.S., Industrial Engineering, Hacettepe University, Turkey, 2022 - ongoing.
 
-# Work Experience
+-   Samsun Anatolian Highschool, Turkey, 2018-2022
 
 ## Employements
 
@@ -19,7 +21,7 @@ sidebar: false
 
 # Competencies
 
-SAP, MS Office, AutoCAD,Python, Canva
+SAP,MS Office, AutoCAD,Python, Canva
 
 # Hobbies
 

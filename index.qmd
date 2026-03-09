@@ -3,8 +3,8 @@ title: "Welcome to My Analytics Lab"
 sidebar: false 
 ---
 
-Hello! My name is Aysenaz Ozyer.
+Hello! I’m **Aysenaz Ozyer**, an Industrial Engineering student at **Hacettepe University**.
 
-I'm an Industrial Engineering Student at Hacettepe University.
+This website is a personal space where I share my work for the **EMU430 course**, including assignments, data analysis, and projects related to analytics and data science.
 
-This website is created for the EMU430 course assignments.
+Through this site, I aim to document my learning process and present the analytical tools and methods I explore during the course.
