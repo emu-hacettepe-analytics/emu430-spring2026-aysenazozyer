@@ -1,5 +1,3 @@
-
-
 ---
 title: "The Tourism Scissors: Analyzing the Impact of Economic Indicators on Domestic vs. International Passenger Traffic in Turkey’s Tourism Hubs"
 sidebar: true 
@@ -7,25 +5,28 @@ sidebar: true
 
 I'm honored to be a member of the **FlyNomics** project team.
 
-Below, you'll find a brief summary of our project. To access a detailed project description, please go to [emu-hacettepe-analytics/flynomics](https://github.com/emu-hacettepe-analytics/emu430-fall2024-team-flynomics/).
+Below, you'll find a brief summary of our project. To access a detailed project description, please go to [emu-hacettepe-analytics/flynomics](https://github.com/emu-hacettepe-analytics/emu430-fall2024-team-flynomics/). 
+
+[Flynomics web sayfası](https://emu-hacettepe-analytics.github.io/emu430-fall2024-team-flynomics/)
 
 **Summary**
 
 As part of my EMU 430 course, our team, "Flynomics," decided to dive into a highly relevant and visible issue: the shifting dynamics of travel in Türkiye. We call our project the **"Tourism Scissors"** analysis.
 
 ### What is the "Tourism Scissors"?
-If you live in Türkiye, you might have noticed a recent trend: while coastal airports and hotels are packed with international tourists, local vacationers are becoming a rare sight. We wanted to see if the data actually backed up this everyday observation. 
 
-The "scissors" refers to the X-shaped divergence we found in our graphs. Especially after 2021, as international flight demand continued to surge, domestic flight demand sharply collapsed. 
+If you live in Türkiye, you might have noticed a recent trend: while coastal airports and hotels are packed with international tourists, local vacationers are becoming a rare sight. We wanted to see if the data actually backed up this everyday observation.
+
+The "scissors" refers to the X-shaped divergence we found in our graphs. Especially after 2021, as international flight demand continued to surge, domestic flight demand sharply collapsed.
 
 ### The Data Behind the Story
+
 To keep our analysis grounded in reality, we couldn't just look at passenger numbers; we needed to pair mobility data with macroeconomic indicators. We processed and visualized everything in R using `dplyr` and `ggplot2`.
 
-Our main data sources were:
-* **DHMI (State Airports Authority):** We filtered monthly passenger traffic specifically for major holiday hubs (Antalya, Izmir, Dalaman, and Milas-Bodrum).
-* **CBRT EVDS (Central Bank of Türkiye):** We pulled the average monthly USD/TRY exchange rate and inflation (CPI) figures to represent economic pressure.
+Our main data sources were: \* **DHMI (State Airports Authority):** We filtered monthly passenger traffic specifically for major holiday hubs (Antalya, Izmir, Dalaman, and Milas-Bodrum). \* **CBRT EVDS (Central Bank of Türkiye):** We pulled the average monthly USD/TRY exchange rate and inflation (CPI) figures to represent economic pressure.
 
 ### Our Key Findings
+
 After cleaning the data and running our Exploratory Data Analysis (EDA), a few striking realities emerged:
 
 1.  **The Peak Season Divergence:** The "scissors" effect is most visible during the summer months. It clearly illustrates how domestic citizens are essentially priced out of high-season tourism.
