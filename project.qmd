@@ -7,7 +7,7 @@ I'm honored to be a member of the **FlyNomics** project team.
 
 Below, you'll find a brief summary of our project. To access a detailed project description, please go to [emu-hacettepe-analytics/flynomics](https://github.com/emu-hacettepe-analytics/emu430-fall2024-team-flynomics/). 
 
-[Flynomics web sayfası](https://emu-hacettepe-analytics.github.io/emu430-fall2024-team-flynomics/)
+[Flynomics website](https://emu-hacettepe-analytics.github.io/emu430-fall2024-team-flynomics/)
 
 **Summary**
 
